@@ -15,5 +15,14 @@ class TesteUniversitarioTest {
 		Boolean actual = uni.sono();
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testeAvaliarNota() {
+		Double nota = 10.0;
+		Universitario uni = new Universitario("Gabriel Lopes","SI");
+		String expected = "mentiroso";
+		String actual = uni.avaliarNota(nota);
+		assertEquals(expected,actual);
+	}
 
 }
